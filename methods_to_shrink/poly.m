@@ -7,14 +7,8 @@ polyDegree = 3;
 
 x = 1:length(data);  % x-values for fitting
 p = polyfit(x, data, polyDegree);
-
-% Evaluate the polynomial at the data points
 fittedData = polyval(p, x);
-
-% Calculate residuals (noise)
 residual = data - fittedData;
-
-% Optionally, plot the results to visualize
 figure;
 subplot(3,1,1);
 plot(x, data);
