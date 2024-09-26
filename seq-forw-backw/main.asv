@@ -1,0 +1,11 @@
+% Load your data
+dataset = data;  % Assuming this is your feature matrix
+labels = dataset(:, end);  % Assuming the last column is your target
+
+% Run SFG to select features
+selectedFeatures = SFG(dataset(:, 1:end-1), labels, 0.95);  % Adjust threshold as needed
+
+% Display selected features
+disp('Selected Features:');
+disp(selectedFeatures);
+

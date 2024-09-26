@@ -1,4 +1,4 @@
-# Reducing the size of a Dataset
+# Dataset manipulation using MATLAB
 
 <!---
 
